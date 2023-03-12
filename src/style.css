@@ -40,12 +40,12 @@ button:hover {
 .chess-board {
   display: flex;
   flex-wrap: wrap;
-  max-width: 400px;
+  max-width: 320px;
 }
 
 .cell {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border: 1px solid #928e8e;
   background: #928e8e;
 }
