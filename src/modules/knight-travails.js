@@ -61,15 +61,16 @@ function knightTravails(start, target) {
 
 function knightMoves(start, target) {
   const shortestMoves = knightTravails(start, target);
+  let output;
   if (shortestMoves.length) {
-    console.log(
-      `You made it in ${shortestMoves.length - 1} moves!  Here's your path:`
-    );
+    output = `You made it in ${
+      shortestMoves.length - 1
+    } moves!  Here's your path<br>`;
     for (const move of shortestMoves) {
-      console.log(move);
+      output += `[${move}]<br>`;
     }
   }
-  return shortestMoves;
+  return { shortestMoves, output };
 }
 
 export { produceBoard, knightMoves, knightTravails };
