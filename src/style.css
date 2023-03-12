@@ -1,7 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.container {
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 .chess-board {
   display: flex;
@@ -25,4 +37,31 @@
 .cell:nth-child(n + 49):nth-child(odd):nth-child(-n + 56),
 .cell:nth-child(n + 57):nth-child(even):nth-child(-n + 64) {
   background: #fff;
+}
+
+.knight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+/* To increase specifity */
+.cell.target.target.target.target {
+  background: #22e41b;
+}
+
+.output {
+  width: 300px;
+  height: 150px;
+  background: #ccc;
+  overflow: hidden;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: #928e8e;
 }
