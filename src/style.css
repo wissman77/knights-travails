@@ -7,6 +7,15 @@
   font-family: 'Noto Sans', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #928e8e;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
 .container {
   width: 400px;
   margin: 0 auto;
@@ -59,9 +68,4 @@
   padding: 5px;
   border-radius: 10px;
   font-size: 0.8rem;
-}
-
-a {
-  text-decoration: none;
-  color: #928e8e;
 }
