@@ -45,7 +45,7 @@ import { knightMoves, produceBoard } from './modules/knight-travails';
             removeKight();
             moveCell.classList.add('knight');
             moveCell.innerHTML = '<i class="fa-solid fa-chess-knight"></i>';
-            moveCell.style.backgroundColor = '#c5f555';
+            moveCell.style.backgroundColor = '#61b2cf';
           }, i * 500);
         }
       }
